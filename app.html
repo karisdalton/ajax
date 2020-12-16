@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="app.css"/>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">
+          <img src="index.png" alt="" style="width: 150px; height:60px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <h4 class="navbar-header">Departments</h4>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">I&M Bank</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item nav-display-flex">
+            <a href="#" class="nav-link">About Us <i class="fas fa-chevron-down"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Branches</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Policies</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Processes</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Edit</a>
+          </li>
+        </ul>
+        </div>
+      </nav>
+
+      <div class="secondary-navbar">
+          <ul class="list-items">
+              <li><a class="list-link" href="#"><i class="fas fa-plus"></i> New <i class="fas fa-chevron-down"></i></a></li>
+              <li><a class="list-link" href="#"><i class="fas fa-cog"></i> Page details</a></li>
+          </ul>
+      </div>
+
+      <div class="content">
+        <div class="container">
+          <h3 class="header">DEPARTMENTS</h3>
+
+          <div class="row no-gutters">
+            <div class="col">
+              <div class="dropdown-main2">
+                <button onclick="displayDropDown(1)" class="btn-main2 dropbtn">Business Development <i class="fas fa-chevron-down main-icon"></i></button>
+                <div class="dropdown1" id="dropdowncontent1">
+                  <div id="Corporate" class="businessLink">
+                    <button onclick="displayDropDown(2)" class="btn-sec2 dropbtn">
+                        Corporate and Institutional Banking <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div id="dropdowncontent2" class="dropdown2">
+                        <p>Chinese Desk</p>
+                        <p>Corporate Banking</p>
+                        <p>German Desk</p>
+                        <p>IMS/Custody</p>
+                      </div>   
+                    </div>
+                    <div id="Branch" class="businessLink">
+                      <button class="btn-sec2">Branch Networks <span><a class="drop-links" href="#"> Link to Branches Page</a></span></button>
+                    </div>
+                  <div id="Agency" class="businessLink">
+                    <button class="btn-sec2">Agency Banking <span><a class="drop-links" href="#">Link to Page</a></span></button>
+                  </div>
+                  <div id="Bancassurance" class="businessLink">
+                      <button class="btn-sec2">Bancassurance<span><a class="drop-links" href="#">Link to Page</a></span></button>
+                  </div>
+                  <div id="Personal" class="businessLink">
+                    <button onclick="displayDropDown(3)" class="btn-sec2 dropbtn">
+                      Personal and Business Banking <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div id="dropdowncontent3" class="dropdown3">
+                      <p>Asset Finance</p>
+                      <p>Business Banking</p>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              <div class="col">
+                <div class="dropdown-main2">
+                  <button onclick="displayDropDown(4)" class="btn-main2 dropbtn">Business Support <i class="fas fa-chevron-down main-icon"></i></button>
+                  <div class="dropdown4" id="dropdowncontent4">
+                    <div id="Corporate" class="businessLink">
+                      <button onclick="displayDropDown(5)" class="btn-sec2 dropbtn">
+                          Chief Operations Office <i class="fas fa-chevron-right"></i>
+                      </button>
+                      <div id="dropdowncontent5" class="dropdown5">
+                          <p>Business Process Engineering</p>
+                          <p>ICT</p>
+                          <p>ICube Digital Factory</p>
+                          <p>Market Risk</p>
+                      </div>   
+                    </div>
+                    <div id="Branch" class="businessLink">
+                        <button class="btn-sec2"></button>
+                    </div>
+                    <div id="Agency" class="businessLink">
+                        <button class="btn-sec2"></button>
+                    </div>
+                    <div id="Bancassurance" class="businessLink">
+                        <button class="btn-sec2"></button>
+                    </div>
+                    <div id="Personal" class="businessLink">
+                      <button onclick="displayDropDown(6)" class="btn-sec2 dropbtn">
+                      Head Office Operations <i class="fas fa-chevron-right"></i>
+                      </button>
+                      <div id="dropdowncontent6" class="dropdown6">
+                          <p>Branch Support</p>
+                          <p>Business Support</p>
+                          <p>Call Center</p>
+                            <p>Card Operations</p>
+                          <p>Cash Management</p>
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="dropdown-main2">
+                  <button onclick="displayDropDown(7)" class="btn-main2 dropbtn">Executive Office <i class="fas fa-chevron-down main-icon"></i></button>
+                  <div class="dropdown7" id="dropdowncontent7">
+                    <div id="Operations" class="businessLink">
+                      <button onclick="displayDropDown(8)" class="btn-sec2 dropbtn">
+                          Finance <i class="fas fa-chevron-right"></i>
+                      </button>
+                      <div id="dropdowncontent8" class="dropdown8">
+                          <p>Branch Support</p>
+                          <p>Business Support</p>
+                      </div>   
+                    </div>
+                    <div id="Branch" class="businessLink">
+                        <button class="btn-sec2">Business Development Office</button>
+                    </div>
+                    <div id="Agency" class="businessLink">
+                        <button class="btn-sec2">CEO's Office</button>
+                    </div>
+                    <div id="Bancassurance" class="businessLink">
+                        <button class="btn-sec2">Chief Operations Office</button>
+                    </div>
+                    <div id="Personal" class="businessLink">
+                      <button class="btn-sec2 dropbtn">
+                      Credit <i class="fas fa-chevron-right"></i>
+                      </button>
+                      <div id="dropdowncontent9" class="dropdown9">
+                          
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4992479f02.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+      $(function () {
+          let requestUri =
+            _spPageContextInfo.webAbsoluteUrl +
+            "/_api/web/lists/getbyTitle('Quick Links')/items?$select=Link";
+          $.ajax({
+            url: requestUri,
+            type: 'GET',
+            headers: {
+              accept: 'application/json; odata=verbose',
+            },
+            success: onSuccess,
+            error: onError,
+          });
+          function onSuccess(data, request) {
+            let renderedHtml = '';
+            for (const info of data.d.results) {
+              console.log(info)
+              renderedHtml += `<li class="list-group-item"><div class="event-info"> <div class="event-info__title"><h5><a href=${info.Link.Url} target="_blank">${info.Link.Description}</a></h5></div></div></li>`;
+            }
+            $('#list-group__tools').append(renderedHtml);
+          }
+          function onError(error) {
+            console.log(error);
+          }
+        });
+    </script>
+</body>
+</html>
